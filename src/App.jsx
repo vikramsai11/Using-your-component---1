@@ -1,40 +1,25 @@
 import { useState } from 'react';
+import Bookcard from './components/bookcard';
 
 function App() {
   const books = [
     {
       id: 1,
       image:
-        'https://tse2.mm.bing.net/th?id=OIP.IIIPIPZYMBOJgxFfWGRtBAHaHa&rs=1&pid=ImgDetMain',
-      name: 'The Great Adventure',
-      genre: 'Fiction',
-      author: 'Jane Doe',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc-lJyDxPLhZEukAKcNf3SI08rlDGvBac0oA&s',
+      name: 'Dodge Challenger ',
+      model: 'M5',
     },
     {
       id: 2,
-      image: 'https://i.thenile.io/r1000/9781496687197.jpg?r=6085750d133cf',
-      name: 'Mysteries of the Universe',
-      genre: 'Science',
-      author: 'John Smith',
+      image: 'https://c.ndtvimg.com/2024-06/qftbgsro_2025-bmw-5-series-front_625x300_09_June_24.jpg?im=FitAndFill,algorithm=cascade,width=545,height=307',
+      name: 'BMW',
+      series: 5,
     },
-    {
-      id: 3,
-      image: 'https://images3.penguinrandomhouse.com/cover/9781933771106',
-      name: 'History Revisited',
-      genre: 'Non-Fiction',
-      author: 'Emily Johnson',
-    },
-    {
-      id: 4,
-      image:
-        'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1700317474i/202368563.jpg',
-      name: 'Culinary Delights',
-      genre: 'Cooking',
-      author: 'Michael Brown',
-    },
+    
   ];
 
-  return <>{/* write code to display all the books using */}</>;
+  return <><Bookcard books={books}/></>;
 }
 
 export default App;
